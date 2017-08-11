@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "UtilFramework"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "踏奇."
   s.description  = <<-DESC
                    成都踏奇科技有限责任公司内部应用
