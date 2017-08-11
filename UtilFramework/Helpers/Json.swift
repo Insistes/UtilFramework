@@ -11,7 +11,7 @@ import Foundation
 public class Json :NSObject{
     
     public func ToJson(obj:NSObject) ->String{
-        return "LXHSD";
+        return "HXY-SD";
     }
     
 }
