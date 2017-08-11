@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11DD05331F3D54E10069E94D /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DD05321F3D54E10069E94D /* Json.swift */; };
 		170825F61F3D4DE30039F236 /* UtilFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 170825EC1F3D4DE30039F236 /* UtilFramework.framework */; };
 		170825FB1F3D4DE30039F236 /* UtilFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170825FA1F3D4DE30039F236 /* UtilFrameworkTests.swift */; };
 		170825FD1F3D4DE30039F236 /* UtilFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 170825EF1F3D4DE30039F236 /* UtilFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11DD05321F3D54E10069E94D /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
 		170825EC1F3D4DE30039F236 /* UtilFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UtilFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		170825EF1F3D4DE30039F236 /* UtilFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilFramework.h; sourceTree = "<group>"; };
 		170825F01F3D4DE30039F236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11DD05311F3D54D30069E94D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11DD05321F3D54E10069E94D /* Json.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		170825E21F3D4DE30039F236 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,7 @@
 		170825EE1F3D4DE30039F236 /* UtilFramework */ = {
 			isa = PBXGroup;
 			children = (
+				11DD05311F3D54D30069E94D /* Helpers */,
 				170825EF1F3D4DE30039F236 /* UtilFramework.h */,
 				170825F01F3D4DE30039F236 /* Info.plist */,
 			);
@@ -149,6 +160,7 @@
 					170825EB1F3D4DE30039F236 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 362JF5A4QL;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					170825F41F3D4DE30039F236 = {
@@ -198,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11DD05331F3D54E10069E94D /* Json.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +337,7 @@
 		170826011F3D4DE30039F236 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 362JF5A4QL;
@@ -336,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.taqigs.UtilFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +358,7 @@
 		170826021F3D4DE30039F236 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 362JF5A4QL;
@@ -362,6 +378,7 @@
 		170826041F3D4DE30039F236 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 362JF5A4QL;
 				INFOPLIST_FILE = UtilFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +391,7 @@
 		170826051F3D4DE30039F236 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 362JF5A4QL;
 				INFOPLIST_FILE = UtilFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +420,7 @@
 				170826021F3D4DE30039F236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		170826031F3D4DE30039F236 /* Build configuration list for PBXNativeTarget "UtilFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +429,7 @@
 				170826051F3D4DE30039F236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
